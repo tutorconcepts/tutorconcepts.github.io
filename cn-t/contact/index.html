@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="referrer" content="always">
+        <link rel="canonical" href="tutorconcepts.com/cn-t/contact">
+        <meta name="description" content="English, Math, and Science Tutoring in Diamond Bar, CA">
+        <title>Tutor Concepts - 聯繫我</title>
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=77b9209c17172e68993c">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    </head>
+    <body class="bg-gray-100">
+        <div class="flex flex-col min-h-screen justify-between">
+            <div x-data="{ show: true }" x-show="show" class="bg-yellow-300 border-l-8 border-yellow-600">
+    <div class="px-5 py-3">
+        <div class="flex justify-between">
+            <h1 class="text-yellow-900 font-semibold">
+                                    領先於COVID-19
+                            </h1>
+            <button type="button" title="Close notice"
+                @click="show = false"
+                class="block text-yellow-900 hover:text-yellow-800 focus:text-yellow-800 focus:outline-none">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path id="banner-x" fill-rule="evenodd"
+                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                </svg>
+            </button>
+        </div>
+        <p class="text-yellow-800 mt-2">
+                            COVID-19大流行挑戰了我們的世界。為了確保每個人的安全和健康，自2020年3月13日起，所有課程已改為在線輔導。
+                    </p>
+    </div>
+</div>
+    
+            <header x-data="{ isOpen: false }" class="bg-white border-t-4 border-indigo-400 shadow-xs z-2">
+    <div class="md:px-6 md:py-3 md:flex md:justify-between">
+        <div class="flex justify-between items-center px-4 py-3 md:p-0">
+            <div>
+                                    <a href="/cn-t" title="主頁">
+                        <h1 class="text-xl font-bold">📝 Tutor<span class="text-indigo-600">Concepts</span></h1>
+                    </a>
+                            </div>
+            <div class="md:hidden">
+                <button type="button"
+                    @click="isOpen = !isOpen"
+                    class="block text-gray-600 hover:text-gray-800 focus:text-gray-800 focus:outline-none">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path x-show="!isOpen" fill-rule="evenodd"
+                            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                        <path x-show="isOpen" fill-rule="evenodd"
+                            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div :class="isOpen ? 'block' : 'hidden'" class="px-3 pt-1 pb-4 text-gray-700 font-semibold md:flex md:items-center md:p-0">
+                        <a 
+            href="/cn-t/diamondbar" 
+            class="block px-2 py-1 mt-1 text-center rounded hover:bg-gray-200 focus:outline-none focus:shadow-outline md:mt-0 md:ml-2"
+        >
+            鑽石吧
+        </a>
+        <a 
+            href="/cn-t/contact" 
+            class="block px-2 py-1 mt-1 text-center rounded hover:bg-gray-200 focus:outline-none focus:shadow-outline md:mt-0 md:ml-2"
+        >
+            聯繫我
+        </a>
+                    <div x-data="{ langIsOpen: false}">
+                <button 
+                    @click="langIsOpen = true" 
+                    class="block px-2 py-1 mt-1 mx-auto text-center rounded bg-gray-200 hover:bg-gray-300 focus:outline-none md:mt-0 md:ml-2"
+                >
+                    中文 (繁體)<span class="pl-1 text-xs">▼</span>
+                </button>
+                
+                <div class="text-center">
+                    <ul
+                        x-show = "langIsOpen"
+                        @click.away="langIsOpen = false"
+                        class="inline-block text-left mt-1 bg-white border rounded shadow md:absolute md:right-0 md:mr-6 " 
+                    >
+                        <a 
+                            href="/contact" 
+                            class="block my-1">
+                            <li class="pl-3 pr-5 py-1 font-normal hover:bg-indigo-500 hover:text-white">
+                                English
+                            </li>
+                        </a>
+                        <a 
+                            href="/cn-s/contact" 
+                            class="block my-1"
+                        >
+                            <li class="pl-3 pr-5 py-1 font-normal hover:bg-indigo-500 hover:text-white">
+                                中文 (简体)
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+                    </div>
+    </div>
+</header>
+    
+            <main class="mt-16 px-8 max-w-5xl mx-auto mb-auto">
+                    <h1 class="text-2xl text-gray-800 font-bold md:text-3xl">有問題嗎？<br class="md:hidden"><span class="text-indigo-600">讓我們取得聯繫！</span></h1>
+    
+    <div class="mt-10 text-gray-800 md:text-lg">
+        <p>
+            如果您有任何疑問或想馬上報名，請與我聯繫！
+        </p>
+    </div>
+
+    <div class="p-4 mt-12 bg-white rounded-lg border border-gray-200 shadow-lg max-w-lg sm:flex sm:items-center">
+        <img class="mx-auto rounded-full w-2/3 sm:w-1/3 sm:m-0 sm:ml-2" src="/assets/images/headshot-tiny.jpg" alt="picture of Elliott">
+
+        <div class="mt-4 text-center sm:text-left sm:ml-8 sm:mb-6">
+            <h1 class="text-2xl text-gray-800 font-bold">
+                <a href="/cn-t/#about">
+                    Elliott
+                </a>
+            </h1>
+            <h2 class="text-indigo-600 font-semibold sm:text-lg">英語，數學，科學，考試準備</h2>
+            <div class="text-gray-800 mt-3">
+                <p>(562) 281-7206</p>
+                <p>elliott@tutorconcepts.com</p>
+            </div>
+        </div>
+    </div>
+            </main>
+            
+            <footer class="mt-20 md:mt-24">
+    <div class="bg-indigo-800 pt-6 pb-4">
+        <div class="px-8 max-w-5xl mx-auto">
+            <div class="md:flex md:content-end md:items-center md:justify-between">
+                <h1 class="text-white text-lg font-bold tracking-wide">Tutor Concepts</h1>
+                <ul class="my-4 text-white text-sm md:my-0 md:flex">
+                    <li class="hover:text-indigo-200 pr-8">
+                                                    <a class="" href="/cn-t">主頁</a>
+                                            </li>
+                    <li class="hover:text-indigo-200">
+                                                    <a class="" href="/cn-t/contact">聯繫我</a>
+                                            </li>
+                </ul>
+            </div>
+            <div class="text-white text-sm max-w-lg md:flex md:pt-4">
+                <p>
+                                            <span class="font-semibold">短信/電話：</span>
+                                        (562) 281-7206
+                </p>
+                <p class="pt-1 md:pt-0 md:ml-16">
+                                            <span class="font-semibold">電子郵件地址：</span>
+                                        elliott@tutorconcepts.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-indigo-900 py-4">
+        <div class="px-8 max-w-5xl mx-auto">
+            <ul class="text-indigo-100 text-sm">
+                <li class="mb-3 font-semibold tracking-wide">© Tutor Concepts LLC 2020</li>
+                <li class="mb-2">
+                    AP®, SAT Subject Tests™, and SAT® are trademarks registered by the College Board, which is not affiliated
+                    with, and does not endorse, this site.
+                </li>
+                <li class="mb-2">
+                    PSAT/NMSQT® is a registered trademark of the College Board and the National Merit Scholarship Corporation,
+                    which are not affiliated with, and do not endorse, this site.
+                </li>
+                <li class="">
+                    ACT® is a trademark registered by ACT, Inc., which is not affiliated with, and does not endorse, this site.
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+        </div>
+    </body>
+</html>

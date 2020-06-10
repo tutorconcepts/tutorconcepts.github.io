@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="referrer" content="always">
+        <link rel="canonical" href="tutorconcepts.com/cn-t/diamondbar">
+        <meta name="description" content="English, Math, and Science Tutoring in Diamond Bar, CA">
+        <title>Tutor Concepts - 鑽石吧</title>
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=77b9209c17172e68993c">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    </head>
+    <body class="bg-gray-100">
+        <div class="flex flex-col min-h-screen justify-between">
+            <div x-data="{ show: true }" x-show="show" class="bg-yellow-300 border-l-8 border-yellow-600">
+    <div class="px-5 py-3">
+        <div class="flex justify-between">
+            <h1 class="text-yellow-900 font-semibold">
+                                    領先於COVID-19
+                            </h1>
+            <button type="button" title="Close notice"
+                @click="show = false"
+                class="block text-yellow-900 hover:text-yellow-800 focus:text-yellow-800 focus:outline-none">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path id="banner-x" fill-rule="evenodd"
+                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                </svg>
+            </button>
+        </div>
+        <p class="text-yellow-800 mt-2">
+                            COVID-19大流行挑戰了我們的世界。為了確保每個人的安全和健康，自2020年3月13日起，所有課程已改為在線輔導。
+                    </p>
+    </div>
+</div>
+    
+            <header x-data="{ isOpen: false }" class="bg-white border-t-4 border-indigo-400 shadow-xs z-2">
+    <div class="md:px-6 md:py-3 md:flex md:justify-between">
+        <div class="flex justify-between items-center px-4 py-3 md:p-0">
+            <div>
+                                    <a href="/cn-t" title="主頁">
+                        <h1 class="text-xl font-bold">📝 Tutor<span class="text-indigo-600">Concepts</span></h1>
+                    </a>
+                            </div>
+            <div class="md:hidden">
+                <button type="button"
+                    @click="isOpen = !isOpen"
+                    class="block text-gray-600 hover:text-gray-800 focus:text-gray-800 focus:outline-none">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path x-show="!isOpen" fill-rule="evenodd"
+                            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                        <path x-show="isOpen" fill-rule="evenodd"
+                            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div :class="isOpen ? 'block' : 'hidden'" class="px-3 pt-1 pb-4 text-gray-700 font-semibold md:flex md:items-center md:p-0">
+                        <a 
+            href="/cn-t/diamondbar" 
+            class="block px-2 py-1 mt-1 text-center rounded hover:bg-gray-200 focus:outline-none focus:shadow-outline md:mt-0 md:ml-2"
+        >
+            鑽石吧
+        </a>
+        <a 
+            href="/cn-t/contact" 
+            class="block px-2 py-1 mt-1 text-center rounded hover:bg-gray-200 focus:outline-none focus:shadow-outline md:mt-0 md:ml-2"
+        >
+            聯繫我
+        </a>
+                    <div x-data="{ langIsOpen: false}">
+                <button 
+                    @click="langIsOpen = true" 
+                    class="block px-2 py-1 mt-1 mx-auto text-center rounded bg-gray-200 hover:bg-gray-300 focus:outline-none md:mt-0 md:ml-2"
+                >
+                    中文 (繁體)<span class="pl-1 text-xs">▼</span>
+                </button>
+                
+                <div class="text-center">
+                    <ul
+                        x-show = "langIsOpen"
+                        @click.away="langIsOpen = false"
+                        class="inline-block text-left mt-1 bg-white border rounded shadow md:absolute md:right-0 md:mr-6 " 
+                    >
+                        <a 
+                            href="/diamondbar" 
+                            class="block my-1">
+                            <li class="pl-3 pr-5 py-1 font-normal hover:bg-indigo-500 hover:text-white">
+                                English
+                            </li>
+                        </a>
+                        <a 
+                            href="/cn-s/diamondbar" 
+                            class="block my-1"
+                        >
+                            <li class="pl-3 pr-5 py-1 font-normal hover:bg-indigo-500 hover:text-white">
+                                中文 (简体)
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+                    </div>
+    </div>
+</header>
+    
+            <main class="mt-16 px-8 max-w-5xl mx-auto mb-auto">
+                
+    <h1 class="text-2xl text-gray-800 font-bold md:text-3xl">鑽石吧</h1>
+
+    <div class="mt-10 text-lg text-gray-800">
+        <h1 class="text-indigo-600 text-xl font-semibold">個別輔導</h1> 
+        <p class="mt-2 leading-relaxed">
+            我的大多數學生目前都在接受個別輔導。我相信這是最有效的學習方式，因為我能夠以最適合每個學生的方式設計和定制教材。學生認為此方式最適合提出問題并快速改進。
+        </p>
+        <p class="mt-4">輔導的科目包括:</p>
+        <ul class="mt-2">
+            <li><span class="font-semibold text-gray-700">數學:</span> 代數1, 幾何, 代數2, 三角學, 微積分學, 統計</li>
+            <li><span class="font-semibold text-gray-700">科學:</span> 生物學, 化學, 物理</li>
+            <li><span class="font-semibold text-gray-700">測試準備:</span> <span class="text-base">SAT®, ACT®, PSAT/NMSQT®, AP®各科考試, SAT Subject Tests™（科目考試)</span></li>
+        </ul>
+        <p class="mt-2">請<a href="/cn-t/contact" class="text-indigo-700 underline">與我聯繫</a>有關報名個別輔導的諸項事宜，以及對上面未列出科目的任何疑問。</p>
+    </div>
+
+    <div class="mt-12 text-lg text-gray-800">
+        <h1 class="text-indigo-600 text-xl font-semibold">小組課</h1>
+        <p class="mt-2 leading-relaxed">
+            一些學生喜歡在同齡人的小組環境中學習。我的小組課每班最多容納8名學生，以保持每位學生的高質量學習效果。請查看下面提供的各項課程。
+        </p>
+        <p class="mt-2">請<a href="/cn-t/contact" class="text-indigo-700 underline">與我聯繫</a>有關報名上小組課的諸項事宜。</p>
+    </div>
+    
+    <h1 class="mt-6 text-gray-600 text-lg font-semibold">2020年夏季 (6月15日 - 8月7日)</h1>
+    <div class="md:flex md:flex-wrap">
+                                    <div class="md:w-1/2">
+                    <a href="/cn-t/diamondbar/chemistry-honors" class="block card -mx-2 mt-4 max-w-md transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-lg md:mx-2">
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-gray-900 text-lg font-semibold h-8">Chemistry Honors</h1>
+                            <svg class="text-gray-900" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L16 12L9 19" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h1 class="-mt-1 mb-1 text-gray-900 text-lg h-8">化學榮譽班</h1>
+                        <p class="text-gray-700">星期一和星期二，下午3-5點</p>
+                                                    <p class="text-gray-700">鑽石吧中學</p>
+                                            </a>
+                </div>
+                                                <div class="md:w-1/2">
+                    <a href="/cn-t/diamondbar/math-analysis-calculus-honors" class="block card -mx-2 mt-4 max-w-md transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-lg md:mx-2">
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-gray-900 text-lg font-semibold h-8">Math Analysis / Calculus Honors</h1>
+                            <svg class="text-gray-900" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L16 12L9 19" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h1 class="-mt-1 mb-1 text-gray-900 text-lg h-8">數學分析/微積分榮譽班</h1>
+                        <p class="text-gray-700">星期四和星期五，下午3-5點</p>
+                                                    <p class="text-gray-700">鑽石吧中學</p>
+                                            </a>
+                </div>
+                                                <div class="md:w-1/2">
+                    <a href="/cn-t/diamondbar/sat-math-level-2" class="block card -mx-2 mt-4 max-w-md transform hover:-translate-y-1 hover:-translate-x-1 hover:shadow-lg md:mx-2">
+                        <div class="flex justify-between items-center">
+                            <h1 class="text-gray-900 text-lg font-semibold h-8">SAT Math Level 2</h1>
+                            <svg class="text-gray-900" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 5L16 12L9 19" stroke="#4A5568" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <h1 class="-mt-1 mb-1 text-gray-900 text-lg h-8">SAT數學2級考試</h1>
+                        <p class="text-gray-700">星期三，下午3-5點</p>
+                                                    <p class="text-gray-700">鑽石吧</p>
+                                            </a>
+                </div>
+                        </div>
+            
+            </main>
+            
+            <footer class="mt-20 md:mt-24">
+    <div class="bg-indigo-800 pt-6 pb-4">
+        <div class="px-8 max-w-5xl mx-auto">
+            <div class="md:flex md:content-end md:items-center md:justify-between">
+                <h1 class="text-white text-lg font-bold tracking-wide">Tutor Concepts</h1>
+                <ul class="my-4 text-white text-sm md:my-0 md:flex">
+                    <li class="hover:text-indigo-200 pr-8">
+                                                    <a class="" href="/cn-t">主頁</a>
+                                            </li>
+                    <li class="hover:text-indigo-200">
+                                                    <a class="" href="/cn-t/contact">聯繫我</a>
+                                            </li>
+                </ul>
+            </div>
+            <div class="text-white text-sm max-w-lg md:flex md:pt-4">
+                <p>
+                                            <span class="font-semibold">短信/電話：</span>
+                                        (562) 281-7206
+                </p>
+                <p class="pt-1 md:pt-0 md:ml-16">
+                                            <span class="font-semibold">電子郵件地址：</span>
+                                        elliott@tutorconcepts.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-indigo-900 py-4">
+        <div class="px-8 max-w-5xl mx-auto">
+            <ul class="text-indigo-100 text-sm">
+                <li class="mb-3 font-semibold tracking-wide">© Tutor Concepts LLC 2020</li>
+                <li class="mb-2">
+                    AP®, SAT Subject Tests™, and SAT® are trademarks registered by the College Board, which is not affiliated
+                    with, and does not endorse, this site.
+                </li>
+                <li class="mb-2">
+                    PSAT/NMSQT® is a registered trademark of the College Board and the National Merit Scholarship Corporation,
+                    which are not affiliated with, and do not endorse, this site.
+                </li>
+                <li class="">
+                    ACT® is a trademark registered by ACT, Inc., which is not affiliated with, and does not endorse, this site.
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+        </div>
+    </body>
+</html>

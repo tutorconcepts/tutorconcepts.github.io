@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="referrer" content="always">
+        <link rel="canonical" href="tutorconcepts.com/">
+        <meta name="description" content="English, Math, and Science Tutoring in Diamond Bar, CA">
+        <title>Tutor Concepts - Welcome</title>
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=77b9209c17172e68993c">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    </head>
+    <body class="bg-gray-100">
+        <div x-data="{ show: true }" x-show="show" class="bg-yellow-300 border-l-8 border-yellow-600">
+    <div class="px-5 py-3">
+        <div class="flex justify-between">
+            <h1 class="text-yellow-900 font-semibold">
+                                    Keeping ahead of COVID-19
+                            </h1>
+            <button type="button" title="Close notice"
+                @click="show = false"
+                class="block text-yellow-900 hover:text-yellow-800 focus:text-yellow-800 focus:outline-none">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path id="banner-x" fill-rule="evenodd"
+                        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                </svg>
+            </button>
+        </div>
+        <p class="text-yellow-800 mt-2">
+                            The COVID-19 pandemic has challenged our world to adapt quickly. To ensure that everyone stays safe and healthy, all tutoring has been moved online as of March 13, 2020.
+                    </p>
+    </div>
+</div>
+
+        <header x-data="{ isOpen: false }" class="bg-white border-t-4 border-indigo-400 shadow-xs z-2">
+    <div class="md:px-6 md:py-3 md:flex md:justify-between">
+        <div class="flex justify-between items-center px-4 py-3 md:p-0">
+            <div>
+                                    <a href="/" title="Home">
+                        <h1 class="text-xl font-bold">📝 Tutor<span class="text-indigo-600">Concepts</span></h1>
+                    </a>
+                            </div>
+            <div class="md:hidden">
+                <button type="button"
+                    @click="isOpen = !isOpen"
+                    class="block text-gray-600 hover:text-gray-800 focus:text-gray-800 focus:outline-none">
+                    <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                        <path x-show="!isOpen" fill-rule="evenodd"
+                            d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                        <path x-show="isOpen" fill-rule="evenodd"
+                            d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div :class="isOpen ? 'block' : 'hidden'" class="px-3 pt-1 pb-4 text-gray-700 font-semibold md:flex md:items-center md:p-0">
+                        <a 
+            href="/diamondbar" 
+            class="block px-2 py-1 mt-1 text-center rounded hover:bg-gray-200 focus:outline-none focus:shadow-outline md:mt-0 md:ml-2"
+        >
+            Diamond Bar
+        </a>
+        <a 
+            href="/contact" 
+            class="block px-2 py-1 mt-1 text-center rounded hover:bg-gray-200 focus:outline-none focus:shadow-outline md:mt-0 md:ml-2"
+        >
+            Contact
+        </a>
+
+                    <div x-data="{ langIsOpen: false}">
+                <button 
+                    @click="langIsOpen = true" 
+                    class="block px-2 py-1 mt-1 mx-auto text-center rounded bg-gray-200 hover:bg-gray-300 focus:outline-none md:mt-0 md:ml-4"
+                >
+                    English<span class="pl-1 text-xs">▼</span>
+                </button>
+                
+                <div class="text-center">
+                    <ul
+                        x-show = "langIsOpen"
+                        @click.away="langIsOpen = false"
+                        class="inline-block text-left mt-1 mr-2 bg-white border rounded shadow md:absolute md:right-0 md:mr-6 " 
+                    >
+                        <a 
+                            href="/cn-s/" 
+                            class="block my-1">
+                            <li class="pl-3 pr-5 py-1 font-normal hover:bg-indigo-500 hover:text-white">
+                                中文 (简体)
+                            </li>
+                        </a>
+                        <a 
+                            href="/cn-t/" 
+                            class="block my-1">
+                            <li class="pl-3 pr-5 py-1 font-normal hover:bg-indigo-500 hover:text-white">
+                                中文 (繁體)
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+                    </div>
+    </div>
+</header>
+
+        <main>
+            <!-- Hero -->
+            <div class="lg:flex lg:flex-row-reverse">
+                <div class="lg:w-1/2 hero-img">
+                    <img class="w-full object-cover object-center relative" style="z-index: -1; height: 18rem;" src="/assets/images/black-pen-grid-paper-med-tiny.jpg" alt="Pen on paper with open book">
+                </div>
+                
+                <div class="px-8 md:px-10 lg:max-w-lg mx-auto lg:w-1/2 lg:text-right lg:mx-0 lg:px-6">
+                    <h1 class="text-3xl font-bold text-gray-200 -mt-40 mb-2 lg:mt-24 lg:text-gray-900 lg:text-4xl">Tutor <span class="text-indigo-400 lg:text-indigo-600">Concepts</span></h1>
+                    <p class="text-gray-400 text-lg leading-tight lg:text-gray-800">A tutor dedicated to helping you reach academic success</p>
+                    
+                </div>
+            </div>
+                
+                
+                
+            <div class="px-8">
+                <!-- Contact -->
+                <div id="contact" class="">
+                    <div class="text-gray-900 card mt-6 border-gray-200 max-w-sm relative z-10 text-center mx-auto lg:-mt-16">
+                        <p><span class="font-semibold tracking-wide">Text/Call: </span>(562) 281-7206</p>
+                        <p><span class="font-semibold tracking-wide">Email: </span>elliott@tutorconcepts.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Student Testimonial -->
+            <div id="testimonial" class="bg-indigo-500 -mt-12 pt-10 lg:-mt-5 lg:pt-4">
+                <div class="h-full px-10 py-8 max-w-5xl mx-auto">
+                    <p class="text-indigo-100 text-center text-lg font-semibold">
+                        "Elliott has gone above and beyond to help me learn. He's able to walk me through difficult concepts step by step until it just clicks."
+                    </p>
+                </div>
+            </div>
+            
+            
+            <div class="px-8 max-w-5xl mx-auto">
+                <!-- Subjects section -->
+                <div id="subjects" class="mt-12 md:mt-16">
+                    <h1 class="section-title">What subjects do I teach?</h1>
+                    <h2 class="mt-3 text-gray-800">I tutor English, math, science, and test prep through high school. Popular subjects include:</h2>
+                    <div class="md:flex md:justify-between md:pl-8 md:pr-12 lg:pl-12 lg:pr-24">
+                        <div class="mt-6">
+                            <h1 class="card-title">AP® Exams</h1>
+                            <ul class="list-none px-5 text-gray-900 leading-7">
+                                <li>Biology</li>
+                                <li>Calculus AB/BC</li>
+                                <li>Chemistry</li>
+                                <li>Physics 1/2/C</li>
+                                <li>Statistics</li>
+                            </ul>
+                        </div>
+                        <div class="mt-6">
+                            <h1 class="card-title">SAT Subject Tests™</h1>
+                            <ul class="list-none px-5 text-gray-900 leading-7">
+                                <li>Math Level 1/2</li>
+                                <li>Biology E/M</li>
+                                <li>Chemistry</li>
+                                <li>Physics</li>
+                            </ul>
+                        </div>
+                        <div class="mt-6 md:pl-2">
+                            <h1 class="card-title">Other Exams</h1>
+                            <h2 class="text-gray-700">All Sections Available <br>(English, Math, Science)</h2>
+                            <ul class="list-none px-5 text-gray-900 mt-1 leading-7">
+                                <li>SAT®</li>
+                                <li>ACT®</li>
+                                <li>PSAT/NMSQT®</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- Why Tutor Concepts -->
+                <div class="mt-16 md:mt-20">
+                    <h1 class="section-title leading-8 lg:-mb-2">Why should you learn with Tutor Concepts?</h1>
+                    <div class="md:grid md:grid-cols-2 md:col-gap-8 md:items-center lg:grid-cols-3 lg:mt-2">
+                        <div class="md:px-4 mt-6 md:col-span-2 lg:col-span-1 md:mx-auto">
+                            <h1 class="card-title">Mastery of Concepts</h1>
+                            <ul class="text-gray-800 mt-2 leading-7">
+                                <li>GPA: 4.0</li>
+                                <li>SAT®: 2400</li>
+                                <li>ACT®: 36</li>
+                                <li>AP®: 12 5's | 17 pass</li>
+                                <li>SAT Subject™: Math/Sciences 790+</li>
+                            </ul>
+                        </div>
+                        <div class="md:px-4 mt-6">
+                            <h1 class="card-title">On-Demand Homework Help</h1>
+                            <p class="text-gray-800 mt-2 leading-7">
+                                Ever encounter a particularly difficult homework question
+                                that stumped you? On-demand homework help is included 
+                                free of charge for all of my students.
+                            </p>
+                        </div>
+                        <div class="md:px-4 mt-6">
+                            <h1 class="card-title">College Consulting</h1>
+                            <p class="text-gray-800 mt-2 leading-7">
+                                Concerned about how to best use your time outside of school?
+                                I can provide feedback on activities you're involved in 
+                                to strengthen your college application.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            
+                <!-- Services section -->
+                <div id="services" class="mt-16 md:mt-24">
+                    <h1 class="section-title -mb-1">How can you take classes?</h1>
+                    <div class="md:grid md:grid-cols-2 md:col-gap-8 md:items-center lg:grid-cols-6 lg:mt-2">
+                        <div class="lg:col-start-2 lg:col-span-2">
+                            <div class="card mt-4 -mx-1">
+                                <h1 class="card-title text-center mt-2">Individual Tutoring</h1>
+                                <p class="card-description">
+                                    Individual tutoring offers you the opportunity
+                                    to study concepts you struggle with most at your
+                                    own desired pace.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lg:row-start-1 lg:col-start-4 lg:col-span-2 lg:px-0">
+                            <div class="card mt-4 -mx-1">
+                                <h1 class="card-title text-center mt-2">Small-Group Classes</h1>
+                                <p class="card-description">
+                                    Small-group classes allow students to learn with peers
+                                    of the same level. Summer 2020 group classes
+                                    can be found <a href="/diamondbar" class="text-indigo-700 hover:underline">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="mt-6 text-center">
+                        <p class="text-gray-700">Inquire to learn which service is best for you.</p>
+                        <div class="mt-4">
+                            <a href="/contact" class="inline-block px-5 py-3 rounded-lg uppercase text-sm tracking-wider font-semibold bg-indigo-600 text-indigo-100 hover:bg-indigo-500 hover:shadow-md">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- About -->
+                <div id="about" class="mt-16 md:mt-20">
+                    <h1 class="section-title">Who am I?</h1>
+                    <div class="flex flex-col-reverse md:mt-4 md:flex-row md:justify-between md:items-end lg:pl-6 lg:pr-10">
+                        <div class="mt-4 mx-auto md:mx-0 md:mt-0">
+                            <h1 class="text-xl font-semibold text-gray-800">Elliott</h1>
+                            <h2 class="font-semibold text-indigo-600 text-base">
+                                UC Berkeley, B.A. Molecular and Cell Biology - Neurobiology
+                            </h2>
+                            <div class="max-w-xl mt-4 text-gray-800 text-justify md:max-w-sm lg:max-w-xl" style="hyphens: auto;">
+                                <p>
+                                    I began teaching while an undergraduate at UC Berkeley, beginning
+                                    with SAT® test prep. After graduating, I decided to continue my passion
+                                    for teaching full-time and postpone my plans for medical school.
+                                </p>
+                                <p class="mt-3">
+                                    Outside of tutoring, I like to engage in video production, from 
+                                    filming to editing. I've also been spending a lot of time learning 
+                                    about web development. In fact, I wrote this website you're currently reading
+                                    using HTML, TailwindCSS, AlpineJS, and Jigsaw. If you're interested,
+                                    I'd be more than happy to talk with you about these technologies.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="mt-4 md:mt-0">
+                            <img class="h-64 mx-auto rounded-full lg:mb-0" src="/assets/images/headshot-tiny.jpg" alt="picture of Elliott">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="mt-20 md:mt-24">
+    <div class="bg-indigo-800 pt-6 pb-4">
+        <div class="px-8 max-w-5xl mx-auto">
+            <div class="md:flex md:content-end md:items-center md:justify-between">
+                <h1 class="text-white text-lg font-bold tracking-wide">Tutor Concepts</h1>
+                <ul class="my-4 text-white text-sm md:my-0 md:flex">
+                    <li class="hover:text-indigo-200 pr-8">
+                                                    <a class="" href="/">Home</a>
+                                            </li>
+                    <li class="hover:text-indigo-200">
+                                                    <a href="/contact">Contact</a>
+                                            </li>
+                </ul>
+            </div>
+            <div class="text-white text-sm max-w-lg md:flex md:pt-4">
+                <p>
+                                            <span class="font-semibold tracking-wide">Text/Call: </span>
+                                        (562) 281-7206
+                </p>
+                <p class="pt-1 md:pt-0 md:ml-16">
+                                            <span class="font-semibold tracking-wide">Email: </span>
+                                        elliott@tutorconcepts.com
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-indigo-900 py-4">
+        <div class="px-8 max-w-5xl mx-auto">
+            <ul class="text-indigo-100 text-sm">
+                <li class="mb-3 font-semibold tracking-wide">© Tutor Concepts LLC 2020</li>
+                <li class="mb-2">
+                    AP®, SAT Subject Tests™, and SAT® are trademarks registered by the College Board, which is not affiliated
+                    with, and does not endorse, this site.
+                </li>
+                <li class="mb-2">
+                    PSAT/NMSQT® is a registered trademark of the College Board and the National Merit Scholarship Corporation,
+                    which are not affiliated with, and do not endorse, this site.
+                </li>
+                <li class="">
+                    ACT® is a trademark registered by ACT, Inc., which is not affiliated with, and does not endorse, this site.
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
